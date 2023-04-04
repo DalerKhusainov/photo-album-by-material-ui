@@ -78,7 +78,7 @@ function App() {
       <>
         <CssBaseline />
         <NavBar />
-        <main>
+        <main className={classes.mainContainer}>
           <div className={classes.container}>
             <Container maxWidth="sm">
               <Header />
