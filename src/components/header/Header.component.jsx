@@ -6,14 +6,11 @@ const Header = () => {
 
   return (
     <>
-      <Typography variant="h2" align="center" color="textPrimary" gutterBottom>
+      <Typography variant="h1" align="center" color="primary">
         Photo Album
       </Typography>
-      <Typography variant="h5" align="center" color="textSecondary" paragraph>
-        Photo album is a collection of photographs that are arranged in a book
-        or binder to preserve memories and tell a story. It can be used to
-        showcase special events, such as weddings or graduations, or to document
-        everyday moments.
+      <Typography variant="h3" align="center" color="textSecondary" paragraph>
+        To showcase your special events.
       </Typography>
       <div className={classes.buttons}>
         <Grid container spacing={2} justifyContent="center">
