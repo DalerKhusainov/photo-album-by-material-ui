@@ -6,9 +6,11 @@ const useStyles = makeStyles((theme) => ({
   buttons: { margin: "60px" },
   cardGrid: { padding: "20px 0" },
   card: { height: "100%", display: "flex", flexDirection: "column" },
-  cardMedia: { paddingTop: "56.25%" /* 16:9 ratio */ },
+  cardMedia: {
+    paddingTop: "56.25%",
+  },
   cardContent: { flexGrow: "1" },
-  footer: { backgroundColor: "#fff", padding: "50px 0" },
+  footer: { borderTop: "solid #1976D2 1px", padding: "50px 0" },
 }));
 
 export default useStyles;
