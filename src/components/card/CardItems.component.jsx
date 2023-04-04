@@ -22,8 +22,10 @@ const CardItems = ({ photos }) => {
         <Typography variant="h5" color="primary">
           {photos.photoTitle}
         </Typography>
-        <Typography variant="h6">{photos.photoInfo}</Typography>
-        <Typography variant="caption">{photos.photoDate}</Typography>
+        <Typography variant="caption" gutterBottom>
+          {photos.photoInfo}
+        </Typography>
+        <Typography variant="subtitle1">{photos.photoDate}</Typography>
       </CardContent>
       <CardActions>
         <Button size="small">View</Button>

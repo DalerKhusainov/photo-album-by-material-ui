@@ -11,55 +11,64 @@ function App() {
     {
       id: "1",
       photoTitle: "Photo 1",
-      photoInfo: "Description",
+      photoInfo:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum.",
       photoDate: "Date of photo",
     },
     {
       id: "2",
       photoTitle: "Photo 2",
-      photoInfo: "Description",
+      photoInfo:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum.",
       photoDate: "Date of photo",
     },
     {
       id: "3",
       photoTitle: "Photo 3",
-      photoInfo: "Description",
+      photoInfo:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum.",
       photoDate: "Date of photo",
     },
     {
       id: "4",
       photoTitle: "Photo 4",
-      photoInfo: "Description",
+      photoInfo:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum.",
       photoDate: "Date of photo",
     },
     {
       id: "5",
       photoTitle: "Photo 5",
-      photoInfo: "Description",
+      photoInfo:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum.",
       photoDate: "Date of photo",
     },
     {
       id: "6",
       photoTitle: "Photo 6",
-      photoInfo: "Description",
+      photoInfo:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum.",
       photoDate: "Date of photo",
     },
     {
       id: "7",
       photoTitle: "Photo 7",
-      photoInfo: "Description",
+      photoInfo:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum.",
       photoDate: "Date of photo",
     },
     {
       id: "8",
       photoTitle: "Photo 8",
-      photoInfo: "Description",
+      photoInfo:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum.",
       photoDate: "Date of photo",
     },
     {
       id: "9",
       photoTitle: "Photo 9",
-      photoInfo: "Description",
+      photoInfo:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum.",
       photoDate: "Date of photo",
     },
   ];
