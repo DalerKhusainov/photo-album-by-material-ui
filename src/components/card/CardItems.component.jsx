@@ -8,8 +8,10 @@ import {
 } from "@mui/material";
 import useStyles from "../../styles/styles";
 
-const CardItems = ({ photos }) => {
+const CardItems = ({ photos, callBackFuncHandler }) => {
   const classes = useStyles();
+
+  console.log("CardItems");
 
   return (
     <Card className={classes.card}>
@@ -29,7 +31,14 @@ const CardItems = ({ photos }) => {
       </CardContent>
       <CardActions>
         <Button size="small">View</Button>
-        <Button size="small">Edit</Button>
+        <Button
+          className={`button-${photos.id}`}
+          size="small"
+          color="error"
+          onClick={() => callBackFuncHandler(photos.id)}
+        >
+          Delete
+        </Button>
       </CardActions>
     </Card>
   );
