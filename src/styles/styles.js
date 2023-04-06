@@ -12,6 +12,10 @@ const useStyles = makeStyles((theme) => ({
   cardContent: { flexGrow: "1" },
   footer: { borderTop: "solid #1976D2 1px", padding: "50px 0" },
   mainContainer: { backgroundColor: "#e9ecef" },
+  selectListItems: {
+    width: "200px",
+    margin: "auto",
+  },
 }));
 
 export default useStyles;

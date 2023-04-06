@@ -6,11 +6,11 @@ const CardList = ({ photos, callBackFuncHandlerMain }) => {
   const [value, setValue] = useState("");
 
   const callBackFunc = (message) => {
-    setValue(message);
+    // setValue(message);
+    callBackFuncHandlerMain(message);
   };
 
   console.log(`CardList`);
-  callBackFuncHandlerMain(value);
 
   return (
     <>

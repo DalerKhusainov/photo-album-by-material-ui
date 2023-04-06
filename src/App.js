@@ -1,8 +1,14 @@
+// MATERIAL UI COMPONENTS
 import { CssBaseline, Grid, Container } from "@mui/material";
 import useStyles from "./styles/styles";
+
+// COMPONENTS
 import NavBar from "./components/nav-bar/NavBar.component";
 import Header from "./components/header/Header.component";
+import SelectListItems from "./components/select-list-Items/SelectListItems.component";
 import CardList from "./components/card-list/CardList.component";
+
+// REACT COMPONENTS
 import { useState, useEffect } from "react";
 
 const photos = [
@@ -11,63 +17,63 @@ const photos = [
     photoTitle: "Photo 1",
     photoInfo:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum.",
-    photoDate: "Date of photo",
+    category: "Wedding",
   },
   {
     id: "2",
     photoTitle: "Photo 2",
     photoInfo:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum.",
-    photoDate: "Date of photo",
+    category: "Birthday",
   },
   {
     id: "3",
-    photoTitle: "Photo 3",
+    photoTitle: `Photo 3`,
     photoInfo:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum.",
-    photoDate: "Date of photo",
+    category: "Wedding",
   },
   {
     id: "4",
     photoTitle: "Photo 4",
     photoInfo:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum.",
-    photoDate: "Date of photo",
+    category: "Wedding",
   },
   {
     id: "5",
     photoTitle: "Photo 5",
     photoInfo:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum.",
-    photoDate: "Date of photo",
+    category: "Weekend",
   },
   {
     id: "6",
     photoTitle: "Photo 6",
     photoInfo:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum.",
-    photoDate: "Date of photo",
+    category: "Birthday",
   },
   {
     id: "7",
     photoTitle: "Photo 7",
     photoInfo:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum.",
-    photoDate: "Date of photo",
+    category: "Birthday",
   },
   {
     id: "8",
     photoTitle: "Photo 8",
     photoInfo:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum.",
-    photoDate: "Date of photo",
+    category: "Weekend",
   },
   {
     id: "9",
     photoTitle: "Photo 9",
     photoInfo:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum.",
-    photoDate: "Date of photo",
+    category: "Birthday",
   },
 ];
 
@@ -88,6 +94,10 @@ function App() {
     setFilteredPhoto(newFilteredPhoto);
   }, [allPhotos, clickedValue]);
 
+  // const setImg = () => {
+  // };
+  // setImg();
+
   useEffect(() => {
     setAllPhotos(filteredPhoto);
   }, [filteredPhoto]);
@@ -103,6 +113,7 @@ function App() {
           <div className={classes.container}>
             <Container maxWidth="sm">
               <Header />
+              <SelectListItems />
             </Container>
             <div>
               <Container className={classes.cardGrid} maxWidth="md">

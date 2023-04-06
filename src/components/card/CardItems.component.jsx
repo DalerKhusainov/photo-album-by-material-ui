@@ -7,9 +7,13 @@ import {
   CardMedia,
 } from "@mui/material";
 import useStyles from "../../styles/styles";
+import { useState } from "react";
 
 const CardItems = ({ photos, callBackFuncHandler }) => {
   const classes = useStyles();
+  const [clickedValue, setClickedValue] = useState("");
+  
+  callBackFuncHandler(clickedValue);
 
   console.log("CardItems");
 
@@ -27,7 +31,7 @@ const CardItems = ({ photos, callBackFuncHandler }) => {
         <Typography variant="caption" gutterBottom>
           {photos.photoInfo}
         </Typography>
-        <Typography variant="subtitle1">{photos.photoDate}</Typography>
+        <Typography variant="subtitle1">{photos.category}</Typography>
       </CardContent>
       <CardActions>
         <Button size="small">View</Button>
@@ -35,7 +39,8 @@ const CardItems = ({ photos, callBackFuncHandler }) => {
           className={`button-${photos.id}`}
           size="small"
           color="error"
-          onClick={() => callBackFuncHandler(photos.id)}
+          onClick={() => setClickedValue(photos.id)}
+          // onClick={() => callBackFuncHandler(photos.id)}
         >
           Delete
         </Button>
