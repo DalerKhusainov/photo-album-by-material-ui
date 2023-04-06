@@ -6,22 +6,23 @@ import Select from "@mui/material/Select";
 import useStyles from "../../styles/styles";
 import { useState } from "react";
 
-const SelectListItems = () => {
+const SelectListItems = ({ callBackSelectHandler }) => {
   const classes = useStyles();
-  const [sort, setAge] = useState("");
+  const [sort, setSort] = useState("");
 
   const handleChange = (event) => {
-    setAge(event.target.value);
+    setSort(event.target.value);
   };
 
-  console.log(sort);
+  callBackSelectHandler(sort);
+  console.log(`Value from SelectedListItems is ${sort}`);
 
   return (
     <>
       {/* <Box sx={{ minWidth: 120 }}> */}
       <div className={classes.selectListItems}>
         <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-label">Sort</InputLabel>
+          <InputLabel id="demo-simple-select-label">Filter</InputLabel>
           <Select
             labelId="demo-simple-select-label"
             id="demo-simple-select"
@@ -32,6 +33,10 @@ const SelectListItems = () => {
             <MenuItem value={"Weekend"}>Weekends</MenuItem>
             <MenuItem value={"Wedding"}>Weddings</MenuItem>
             <MenuItem value={"Birthday"}>Birthdays</MenuItem>
+            <MenuItem value={"Party"}>Parties</MenuItem>
+            <MenuItem value={"Asc"}>A - Z</MenuItem>
+            <MenuItem value={"Des"}>Z - B</MenuItem>
+            <MenuItem value={"All categories"}>All categories</MenuItem>
           </Select>
         </FormControl>
       </div>

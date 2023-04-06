@@ -1,16 +1,20 @@
 import { Grid } from "@mui/material";
 import CardItems from "../card/CardItems.component";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const CardList = ({ photos, callBackFuncHandlerMain }) => {
   const [value, setValue] = useState("");
 
   const callBackFunc = (message) => {
-    // setValue(message);
-    callBackFuncHandlerMain(message);
+    setValue(message);
+    // callBackFuncHandlerMain(message);
+    // console.log(message);
   };
 
+  callBackFuncHandlerMain(value);
+
   console.log(`CardList`);
+  console.log(`CardList ${value}`);
 
   return (
     <>

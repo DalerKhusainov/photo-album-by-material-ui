@@ -7,15 +7,24 @@ import {
   CardMedia,
 } from "@mui/material";
 import useStyles from "../../styles/styles";
-import { useState } from "react";
+// import { useState } from "react";
+// import { useEffect } from "react";
 
 const CardItems = ({ photos, callBackFuncHandler }) => {
   const classes = useStyles();
-  const [clickedValue, setClickedValue] = useState("");
-  
-  callBackFuncHandler(clickedValue);
+  // const [clickedBtnValue, setClickedBtnValue] = useState("");
+  // const [sendValue, setSendValue] = useState(clickedBtnValue);
+
+  // console.log(sendValue);
+
+  // useEffect(() => {
+  //   callBackFuncHandler(clickedBtnValue);
+  // }, []);
+
+  // callBackFuncHandler(clickedBtnValue);
 
   console.log("CardItems");
+  // console.log(clickedBtnValue);
 
   return (
     <Card className={classes.card}>
@@ -31,18 +40,19 @@ const CardItems = ({ photos, callBackFuncHandler }) => {
         <Typography variant="caption" gutterBottom>
           {photos.photoInfo}
         </Typography>
-        <Typography variant="subtitle1">{photos.category}</Typography>
+        <Typography variant="subtitle1" color="secondary">
+          {photos.category}
+        </Typography>
       </CardContent>
       <CardActions>
         <Button size="small">View</Button>
         <Button
           className={`button-${photos.id}`}
           size="small"
-          color="error"
-          onClick={() => setClickedValue(photos.id)}
-          // onClick={() => callBackFuncHandler(photos.id)}
+          // onClick={() => setClickedBtnValue(photos.id)}
+          onClick={() => callBackFuncHandler(photos.id)}
         >
-          Delete
+          Edit
         </Button>
       </CardActions>
     </Card>
