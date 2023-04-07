@@ -19,7 +19,6 @@ const SelectListItems = ({ callBackSelectHandler }) => {
 
   return (
     <>
-      {/* <Box sx={{ minWidth: 120 }}> */}
       <div className={classes.selectListItems}>
         <FormControl fullWidth>
           <InputLabel id="demo-simple-select-label">Filter</InputLabel>
@@ -34,13 +33,12 @@ const SelectListItems = ({ callBackSelectHandler }) => {
             <MenuItem value={"Wedding"}>Weddings</MenuItem>
             <MenuItem value={"Birthday"}>Birthdays</MenuItem>
             <MenuItem value={"Party"}>Parties</MenuItem>
-            <MenuItem value={"Asc"}>A - Z</MenuItem>
-            <MenuItem value={"Des"}>Z - B</MenuItem>
+            <MenuItem value={"Asc"}>Alphabetical A-Z</MenuItem>
+            <MenuItem value={"Des"}>Alphabetical Z-B</MenuItem>
             <MenuItem value={"All categories"}>All categories</MenuItem>
           </Select>
         </FormControl>
       </div>
-      {/* </Box> */}
     </>
   );
 };
