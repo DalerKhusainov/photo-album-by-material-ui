@@ -11,11 +11,28 @@ const useStyles = makeStyles((theme) => ({
   },
   cardContent: { flexGrow: "1" },
   footer: { borderTop: "solid #1976D2 1px", padding: "50px 0" },
-  mainContainer: { backgroundColor: "#e9ecef", height: "2000px" },
+  mainContainer: {
+    backgroundColor: "#e9ecef",
+    height: "2000px",
+  },
   selectListItems: {
     width: "200px",
     margin: "auto auto 30px auto",
   },
+  contentArea: {
+    position: "relative",
+    padding: "80px",
+  },
+  btnActions: {
+    position: "absolute",
+    top: "0px",
+    right: "35px",
+    display: "flex",
+    flexDirection: "rows",
+    alignItems: "center",
+    padding: "20px",
+  },
+  filterSelector: { height: "55px", marginRight: "20px" },
 }));
 
 export default useStyles;
