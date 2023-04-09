@@ -17,22 +17,22 @@ const useStyles = makeStyles((theme) => ({
   },
   selectListItems: {
     width: "200px",
-    margin: "auto auto 30px auto",
+    marginLeft: "auto",
   },
   contentArea: {
     position: "relative",
-    padding: "80px",
+    padding: "30px",
   },
   btnActions: {
-    position: "absolute",
-    top: "0px",
-    right: "35px",
     display: "flex",
-    flexDirection: "rows",
-    alignItems: "center",
-    padding: "20px",
   },
-  filterSelector: { height: "55px", marginRight: "20px" },
+  filterSelector: { height: "55px" },
+  searchField: { marginLeft: "auto", marginRight: "30px" },
+  messageForCards: {
+    padding: "10px",
+    width: "max-content",
+    margin: "auto",
+  },
 }));
 
 export default useStyles;

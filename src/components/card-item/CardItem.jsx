@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import useStyles from "../../styles/styles";
 
-const CardItems = ({ photos, onClickHandler }) => {
+const CardItem = ({ photos, onClickHandler }) => {
   const classes = useStyles();
   const { imgUrl, photoTitle, photoInfo, id, category } = photos;
 
@@ -51,4 +51,4 @@ const CardItems = ({ photos, onClickHandler }) => {
   );
 };
 
-export default CardItems;
+export default CardItem;
